@@ -31,7 +31,7 @@ function App() {
       <BrowserRouter>
           <Routes>
 
-              <Route exact path={`${process.env.PUBLIC_URL + '/'}`} element={<HomeOne/>}/>
+              <Route exact path={`${process.env.PUBLIC_URL + '/'}`} element={<HomeTwo/>}/>
               <Route exact path={`${process.env.PUBLIC_URL + '/home-2'}`} element={<HomeTwo/>}/>
               <Route exact path={`${process.env.PUBLIC_URL + '/about'}`} element={<AboutMain/>}/>
 

@@ -9,8 +9,8 @@ const HomeTwo =() =>  {
             <HeaderTwo />       
                     <Banner />
                     <Features />
-                    <CourseCat01 />
                     <Counter />
+                    <CourseCat01 />
                     <CourseGridPopular />
                     <Cta />
                     <Process />

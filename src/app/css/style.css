@@ -434,6 +434,10 @@ textarea.form-control {
   color: #666;
   color: var(--theme-secondary-color);
 }
+.myColor {
+  color: #666;
+  color: var(--theme-secondary-color);
+}
 
 .icon-radius {
   border-radius: 100% !important;

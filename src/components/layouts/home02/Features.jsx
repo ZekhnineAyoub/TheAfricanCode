@@ -8,22 +8,22 @@ class Features extends Component {
                 {
                     id: 1,
                     icon: 'fad fa-users',
-                    title: 'Get Certificate',
-                    text: 'Lorem ipsum dolor seat ameat dui too consecteture',
+                    title: 'Obtenir un Certificat',
+                    text: 'Obtenez un certificat de compétence qui validera vos connaissances et renforcera votre carrière professionnelle',
                     extraClassName: 'icon-bg-1',
                 },
                 {
                     id: 2,
                     icon: 'far fa-file-certificate',
-                    title: 'Skilled Instructors',
-                    text: 'Lorem ipsum dolor seat ameat dui too consecteture',
+                    title: 'Enseignants compétents',
+                    text: 'Nos instructeurs qualifiés possèdent une vaste expertise dans le domaine du développement informatique avancé et sont prêts à vous guider dans votre parcours apprentissage',
                     extraClassName: 'icon-bg-2',
                 },
                 {
                     id: 3,
                     icon: 'fa fa-video',
-                    title: 'Online Classes',
-                    text: 'Lorem ipsum dolor seat ameat dui too consecteture',
+                    title: 'Cours en ligne',
+                    text: 'Nos cours en ligne offrent une flexibilité exceptionnelle, vous permettant apprendre à votre rythme, où que vous soyez',
                     extraClassName: 'icon-bg-3',
                 },
                 
@@ -35,7 +35,7 @@ class Features extends Component {
     render() {
         return (
 
-            <section className="features-intro">
+            <section className="features-intro pb-5">
                 <div className="container">
                     <div className="feature-inner">
                         <div className="row">

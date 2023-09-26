@@ -14,37 +14,37 @@ class CourseCat01 extends Component {
                 },
                 {
                     id: 2,
-                    title: 'Artificial Intellegence',
+                    title: 'Intelligence Artificielle',
                     img :  'assets/images/icon/icon2.png',
                 },
                 {
                     id: 3,
-                    title: 'Algebra Math calculation',
+                    title: ' Développement Back End ',
                     img :  'assets/images/icon/icon6.png',
                 },
                 {
                     id: 4,
-                    title: 'Web Development',
+                    title: 'Développement Front End',
                     img :  'assets/images/icon/icon4.png',
                 },
                 {
                     id: 5,
-                    title: 'Digital Marketing & SEO',
+                    title: 'Devops',
                     img :  'assets/images/icon/icon6.png',
                 },
                 {
                     id: 6,
-                    title: 'Health & Fitness',
+                    title: 'Architecture Logiciel',
                     img :  'assets/images/icon/icon2.png',
                 }, 
                 {
                     id: 7,
-                    title: 'Marketing',
+                    title: 'Infrastrucutre',
                     img :  'assets/images/icon/icon3.png',
                 }, 
                 {
                     id: 8,
-                    title: 'Photography',
+                    title: 'Développement WEB/Mobile',
                     img :  'assets/images/icon/icon4.png',
                 },
                 
@@ -56,41 +56,46 @@ class CourseCat01 extends Component {
     render() {
         // Course category
 
-        return (    
-            
-            <section className="section-padding">
-                <div className="container-fluid container-grid">
-                    <div className="row justify-content-center">
-                        <div className="col-xl-8">
-                            <div className="heading mb-50 text-center">
-                                <span className="subheading">Top Categories</span>
-                                <h2>Browse Courses By Category</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                    {
-                        this.state.category.map((data,i)=> (
-                            <div className="col-xl-3 col-lg-4 col-md-6">
-                                <div className="single-course-category style-2 ">
-                                    <div className="course-cat-icon">
-                                        <img src={data.img} alt="" className="img-fluid"/>
-                                    </div>
-                                    <div className="course-cat-content">
-                                        <h4 className="course-cat-title">
-                                            <Link to="#">{data.title}</Link>
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                     }
-                        
-                    </div>
+        return (
+          <section className="section-padding">
+            <div className="container-fluid container-grid">
+              <div className="row justify-content-center">
+                <div className="col-xl-8">
+                  <div className="heading mb-50 text-center">
+                    <span className="subheading">Les technos enseignées</span>
+                    <h2>Maîtrisez les langages et les concepts les plus demandés sur le marché du travail</h2>
+                  </div>
                 </div>
-            </section>
+              </div>
 
+              <div className="row">
+                {this.state.category.map((data, i) => (
+                  <div className="col-xl-3 col-lg-4 col-md-6">
+                    <div className="single-course-category style-2 ">
+                      <div className="course-cat-icon">
+                        <img src={data.img} alt="" className="img-fluid" />
+                      </div>
+                      <div className="course-cat-content">
+                        <h4 className="course-cat-title">
+                          <Link to="#">{data.title}</Link>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-center pt-5">
+              <div className="banner-img-round mt-5 mt-lg-0">
+                <img
+                  src="assets/images/banner/langage.png"
+                  alt=""
+                  className="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </section>
         );
     }
 }
